@@ -239,7 +239,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5498244355035103572, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 224681045}
   m_SourcePrefab: {fileID: 100100000, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
 --- !u!1001 &92661476
 PrefabInstance:
@@ -474,6 +477,27 @@ Transform:
   - {fileID: 447175616}
   m_Father: {fileID: 143887654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &224681044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5498244355035103572, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
+  m_PrefabInstance: {fileID: 89024636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &224681045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224681044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4901134c62900e6bd956c2d514f5ed83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shooter
+  balls: {fileID: 459216925965624990, guid: a8af5bc709182ccdea4754e98fff61cb, type: 3}
+  shootPoint: {fileID: 937440712}
+  shootForce: 5
+  maxBalls: 10
 --- !u!4 &270388515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1671176455814425533, guid: 9e0a64e1e67771495bf2137d5382822b, type: 3}
@@ -1587,6 +1611,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eafc065667d27cb9c955343978ac7c19, type: 3}
+--- !u!4 &937440712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1977604331066223430, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
+  m_PrefabInstance: {fileID: 89024636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1117751649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,7 +2431,7 @@ PrefabInstance:
     - target: {fileID: 4380975297827019686, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
       propertyPath: shooter
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 224681045}
     - target: {fileID: 5560108253142166537, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6

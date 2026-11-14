@@ -6,7 +6,6 @@ public class BallCatcher : MonoBehaviour
     public UIManager uiManager;
     public float moveDistance = 3f;
     public float moveSpeed = 2f;
-    public UIManager uiManager; 
 
     // public GameObject winText;
     public Shooter shooter;
