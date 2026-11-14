@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7ef13c31618ec9ea68e7d0232d170d2b
+guid: b1fedfd5fde6de8f293a3b7996b289ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6662638256885751896
-    second: Image from iOS (1)-Photoroom_0
+      213: -6719330583193318112
+    second: Image_from_iOS-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Image from iOS (1)-Photoroom_0
+      name: Image_from_iOS-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 577
-        y: 1246
-        width: 907
-        height: 795
+        x: 103
+        y: 243
+        width: 214
+        height: 204
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8506a98c132767c50800000000000000
-      internalID: 6662638256885751896
+      spriteID: 02d08546f6420c2a0800000000000000
+      internalID: -6719330583193318112
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 558cf6df2390a9d9185e86e950d7e83c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Image from iOS (1)-Photoroom_0: 6662638256885751896
+      Image_from_iOS-removebg-preview_0: -6719330583193318112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
