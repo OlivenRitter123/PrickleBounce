@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class BallCatcher : MonoBehaviour
 {
     public float moveDistance = 3f;
@@ -48,5 +48,6 @@ public class BallCatcher : MonoBehaviour
             shooter.enabled = false;
 
         Debug.Log("Gewonnen!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
