@@ -12,6 +12,8 @@ public class Shooter : MonoBehaviour
     public int maxBalls = 10;
     private int ballsShot = 0;
 
+    private GameObject currentBall;
+
     void Start()
     {
         shootAction = InputSystem.actions.FindAction("Player/Shoot", true);
@@ -20,13 +22,15 @@ public class Shooter : MonoBehaviour
 
     void Update()
     {
+        if (currentBall != null) return;
+
         if (shootAction.WasPressedThisFrame() && ballsShot < maxBalls)
         {
-            GameObject ball = Instantiate(
+            currentBall = Instantiate(
                 balls, shootPoint.position, shootPoint.rotation
             );
 
-            Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb = currentBall.GetComponent<Rigidbody2D>();
 
             rb.AddForce(
                 -transform.up * shootForce,
