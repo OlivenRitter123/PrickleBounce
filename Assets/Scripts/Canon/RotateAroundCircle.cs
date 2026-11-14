@@ -14,7 +14,7 @@ public class RotateAroundCircle : MonoBehaviour
             .WorldToScreenPoint(transform.position).x;
 
         float angle = (mouseX - centerX) * sensitivity;
-        angle = Mathf.Clamp(angle, -60f, 60f);
+        angle = Mathf.Clamp(angle, -75f, 75f);
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
