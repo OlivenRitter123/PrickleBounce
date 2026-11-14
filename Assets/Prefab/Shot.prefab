@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1980b3fb2770fa5d29158ba6e7913b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
-  bounceForce: 5
+  bounceForce: 3
