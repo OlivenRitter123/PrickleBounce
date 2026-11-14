@@ -739,6 +739,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eafc065667d27cb9c955343978ac7c19, type: 3}
+--- !u!1 &407143645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407143647}
+  - component: {fileID: 407143646}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &407143646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407143645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ed14a055d4e1acbc06851ebee16d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  menuScene: Menu
+  creditsScene: Credit
+  levelScenes:
+  - Level1
+  - Level2
+  - Level3
+--- !u!4 &407143647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407143645}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &414675021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3462,6 +3512,10 @@ PrefabInstance:
       propertyPath: shooter
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4380975297827019686, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 407143646}
     - target: {fileID: 5560108253142166537, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -3588,6 +3642,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 407143647}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 143887654}

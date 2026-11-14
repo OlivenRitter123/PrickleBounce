@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class BallCatcher : MonoBehaviour
 {
+    public UIManager uiManager;
     public float moveDistance = 3f;
     public float moveSpeed = 2f;
 
@@ -48,6 +49,6 @@ public class BallCatcher : MonoBehaviour
             shooter.enabled = false;
 
         Debug.Log("Gewonnen!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        uiManager.NextLevel();
     }
 }
