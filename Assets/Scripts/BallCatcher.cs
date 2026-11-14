@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallCatcher : MonoBehaviour
 {
@@ -48,5 +49,6 @@ public class BallCatcher : MonoBehaviour
             shooter.enabled = false;
 
         Debug.Log("Gewonnen!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
