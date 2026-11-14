@@ -20,21 +20,25 @@ public class UIManager : MonoBehaviour
     }
 
     public void NextLevel()
+{
+    string currentScene = SceneManager.GetActiveScene().name;
+    int currentLevel = System.Array.IndexOf(levelScenes, currentScene);
+
+    Debug.Log("NextLevel gedrückt. Aktuelle Szene: " + currentScene);
+
+    if (currentLevel < 0)
     {
-        string currentScene = SceneManager.GetActiveScene().name;
-        int currentLevel = System.Array.IndexOf(levelScenes, currentScene);
-
-        if (currentLevel < 0) return;
-
-        if (currentLevel + 1 < levelScenes.Length)
-        {
-            SceneManager.LoadScene(levelScenes[currentLevel + 1]);
-        }
-        else
-        {
-            Credits();
-        }
+        Debug.LogError(
+            "Szene '" + currentScene + "' fehlt in Level Scenes!"
+        );
+        return;
     }
+
+    if (currentLevel + 1 < levelScenes.Length)
+        SceneManager.LoadScene(levelScenes[currentLevel + 1]);
+    else
+        Credits();
+}
 
     public void MainMenu()
     {

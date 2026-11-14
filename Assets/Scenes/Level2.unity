@@ -369,8 +369,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5498244355035103572, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 89024638}
   m_SourcePrefab: {fileID: 100100000, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
+--- !u!1 &89024637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5498244355035103572, guid: 7f40df831f1b3793e964722d2a770734, type: 3}
+  m_PrefabInstance: {fileID: 89024636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &89024638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89024637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4901134c62900e6bd956c2d514f5ed83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shooter
+  balls: {fileID: 0}
+  shootPoint: {fileID: 0}
+  shootForce: 5
+  maxBalls: 10
 --- !u!1001 &92661476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3511,6 +3535,10 @@ PrefabInstance:
       propertyPath: shooter
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4380975297827019686, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 1559919378}
     - target: {fileID: 5560108253142166537, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6

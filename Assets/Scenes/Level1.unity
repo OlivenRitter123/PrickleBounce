@@ -2432,6 +2432,10 @@ PrefabInstance:
       propertyPath: shooter
       value: 
       objectReference: {fileID: 224681045}
+    - target: {fileID: 4380975297827019686, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 672215849}
     - target: {fileID: 5560108253142166537, guid: 1544fa7b03d8f29cc964e0d31549e3ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
