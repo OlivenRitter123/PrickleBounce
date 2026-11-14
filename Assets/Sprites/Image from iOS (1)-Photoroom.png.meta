@@ -116,12 +116,12 @@ TextureImporter:
       name: Image from iOS (1)-Photoroom_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2400
-        height: 2400
+        x: 577
+        y: 1246
+        width: 907
+        height: 795
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 558cf6df2390a9d9185e86e950d7e83c
     internalID: 0
     vertices: []
     indices: 
